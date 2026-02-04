@@ -63,8 +63,8 @@ export interface Event {
   data?: Record<string, unknown>;
 }
 
-// Stats for dashboard
-export interface DashboardStats {
+// Stats for datahub
+export interface DatahubStats {
   totalAssets: number;
   activeAssets: number;
   movingAssets: number;

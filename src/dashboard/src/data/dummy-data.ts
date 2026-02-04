@@ -723,8 +723,8 @@ export function getGeofenceById(id: string): Geofence | undefined {
   return geofences.find(g => g.id === id);
 }
 
-// Calculate dashboard stats
-export function getDashboardStats() {
+// Calculate datahub stats
+export function getDatahubStats() {
   const activeAssets = assets.filter(a => a.status === 'active').length;
   const movingAssets = assets.filter(a => 
     a.status === 'active' && 

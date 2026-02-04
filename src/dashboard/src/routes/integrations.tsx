@@ -81,7 +81,7 @@ const IntegrationsPage: Component = () => {
         <div class="rounded-xl border border-base-200 bg-base-100 p-4 shadow-sm">
           <div class="text-xs uppercase tracking-wide text-base-content/60">Realtime Updates</div>
           <div class="mt-2 text-sm text-base-content/70">
-            Streaming updates are delivered within 2s SLA to dashboard consumers.
+            Streaming updates are delivered within 2s SLA to datahub consumers.
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import { Component, createMemo } from 'solid-js';
-import { dashboardStats } from '~/lib/stores';
+import { datahubStats } from '~/lib/stores';
 
 const StatsPanel: Component = () => {
-  const stats = dashboardStats;
+  const stats = datahubStats;
   const activeRate = createMemo(() => {
     if (!stats().totalAssets) return 0;
     return Math.round((stats().activeAssets / stats().totalAssets) * 100);

@@ -29,7 +29,7 @@ export interface TranslationsShape {
     features: string;
     useCases: string;
     contact: string;
-    dashboard: string;
+    datahub: string;
     ariaToggleTheme: string;
     ariaSelectLanguage: string;
     langEn: string;
@@ -41,7 +41,8 @@ export interface TranslationsShape {
     headingUnified: string;
     headingTrackingPlatform: string;
     tagline: string;
-    viewDashboard: string;
+    viewDatahub: string;
+    requestDemo: string;
     learnMore: string;
     statActiveAssets: string;
     statCountries: string;
@@ -92,7 +93,7 @@ const en: TranslationsShape = {
     features: 'Features',
     useCases: 'Use Cases',
     contact: 'Contact',
-    dashboard: 'Dashboard',
+    datahub: 'Datahub',
     ariaToggleTheme: 'Toggle theme',
     ariaSelectLanguage: 'Select language',
     langEn: 'EN',
@@ -105,7 +106,8 @@ const en: TranslationsShape = {
     headingTrackingPlatform: 'Datahub',
     tagline:
       'Track and manage your fleet across the globe. Collate data and utilise advanced analytics to gain visibility into your fleet operations ',
-    viewDashboard: 'Request Demo',
+    viewDatahub: 'View Datahub',
+    requestDemo: 'Request Demo',
     learnMore: 'Learn More',
     statActiveAssets: 'Active Assets',
     statCountries: 'Countries',
@@ -129,7 +131,7 @@ const en: TranslationsShape = {
         icon: 'data',
         title: 'Multi-Source Integration',
         description:
-          'Integrate data from multiple GPS devices and tracking sources. Unified dashboard for all your logistics assets.',
+          'Integrate data from multiple GPS devices and tracking sources. Unified datahub for all your logistics assets.',
       },
       {
         icon: 'chart',
@@ -212,7 +214,7 @@ const en: TranslationsShape = {
       {
         title: 'Product',
         links: [
-          { label: 'Dashboard', href: '/dashboard' },
+          { label: 'Datahub', href: 'https://datahub.vectorhaul.com' },
           { label: 'Features', href: '#features' },
           { label: 'Use Cases', href: '#use-cases' },
           { label: 'Pricing', href: '#pricing' },
@@ -255,20 +257,21 @@ const ms: TranslationsShape = {
     features: 'Ciri-ciri',
     useCases: 'Kes Penggunaan',
     contact: 'Hubungi',
-    dashboard: 'Papan Pemuka',
+    datahub: 'Datahub',
     ariaToggleTheme: 'Tukar tema',
     ariaSelectLanguage: 'Pilih bahasa',
     langEn: 'EN',
     langMs: 'BM',
   },
   hero: {
-    badge: 'Platform Penjejakan GPS Masa Nyata',
+    badge: 'Mampu Penjejakan Masa Nyata',
     words: ['Armada', 'Pemandu', 'Aset'],
-    headingUnified: 'Penyatuan',
-    headingTrackingPlatform: 'Platform Penjejakan',
+    headingUnified: 'Bersepadu',
+    headingTrackingPlatform: 'Datahub',
     tagline:
-      'Jejak armada anda secara masa nyata di seluruh Asia Tenggara. Dapatkan visibiliti penuh operasi logistik anda dengan penyelesaian penjejakan peringkat perusahaan.',
-    viewDashboard: 'Lihat Papan Pemuka',
+      'Jejaki dan urus armada anda di seluruh dunia. Satukan data dan gunakan analitik lanjutan untuk mendapatkan keterlihatan terhadap operasi armada anda.',
+    viewDatahub: 'Lihat Datahub',
+    requestDemo: 'Minta Demo',
     learnMore: 'Ketahui Lebih Lanjut',
     statActiveAssets: 'Aset Aktif',
     statCountries: 'Negara',
@@ -292,7 +295,7 @@ const ms: TranslationsShape = {
         icon: 'data',
         title: 'Integrasi Pelbagai Sumber',
         description:
-          'Integrasikan data daripada pelbagai peranti GPS dan sumber penjejakan. Papan pemuka bersatu untuk semua aset logistik anda.',
+          'Integrasikan data daripada pelbagai peranti GPS dan sumber penjejakan. Datahub bersepadu untuk semua aset logistik anda.',
       },
       {
         icon: 'chart',
@@ -368,14 +371,14 @@ const ms: TranslationsShape = {
     support247: 'Sokongan 24/7',
   },
   footer: {
-    brand: 'Logistics Tracker',
+    brand: 'VectorHaul',
     tagline:
-      'Platform penjejakan logistik bersatu untuk visibiliti armada masa nyata di seluruh Asia Tenggara.',
+      'Platform penjejakan logistik bersepadu untuk keterlihatan armada masa nyata di seluruh Asia Tenggara.',
     sections: [
       {
         title: 'Produk',
         links: [
-          { label: 'Papan Pemuka', href: '/dashboard' },
+          { label: 'Datahub', href: 'https://datahub.vectorhaul.com' },
           { label: 'Ciri-ciri', href: '#features' },
           { label: 'Kes Penggunaan', href: '#use-cases' },
           { label: 'Harga', href: '#pricing' },
@@ -400,15 +403,15 @@ const ms: TranslationsShape = {
         ],
       },
     ],
-    copyright: 'Platform Logistics Tracker. Hak cipta terpelihara.',
+    copyright: 'Platform Penjejakan Logistik. Hak cipta terpelihara.',
     privacyPolicy: 'Dasar Privasi',
     termsOfService: 'Terma Perkhidmatan',
     cookiePolicy: 'Dasar Kuki',
   },
   meta: {
-    title: 'Logistics Tracker - Platform Penjejakan Armada Masa Nyata',
+    title: 'VectorHaul - Datahub Armada Bersepadu',
     description:
-      'Platform Penjejakan Logistik Bersatu - Penjejakan GPS masa nyata di seluruh Asia Tenggara',
+      'Jejaki dan urus armada anda di seluruh dunia. Satukan data dan gunakan analitik lanjutan untuk mendapatkan keterlihatan terhadap operasi armada anda',
   },
 };
 

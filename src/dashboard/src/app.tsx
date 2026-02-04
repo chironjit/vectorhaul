@@ -1,7 +1,7 @@
 import { Router, useLocation, Navigate } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense, createSignal, onMount, Show } from "solid-js";
-import DashboardLayout from "~/components/layout/DashboardLayout";
+import DatahubLayout from "~/components/layout/DatahubLayout";
 import { initTheme, initAuth, isAuthenticated } from "~/lib/stores";
 import "./app.css";
 
@@ -31,7 +31,7 @@ function AppRoot(props: { children: unknown }) {
             when={isAuthenticated()}
             fallback={<Navigate href="/login" />}
           >
-            <DashboardLayout>
+            <DatahubLayout>
               <Suspense fallback={
                 <div class="flex items-center justify-center h-full">
                   <span class="loading loading-spinner loading-lg text-primary"></span>
@@ -39,7 +39,7 @@ function AppRoot(props: { children: unknown }) {
               }>
                 {props.children}
               </Suspense>
-            </DashboardLayout>
+            </DatahubLayout>
           </Show>
         </Show>
       }

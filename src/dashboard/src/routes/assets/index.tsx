@@ -2,10 +2,10 @@ import { Component } from 'solid-js';
 import { A } from '@solidjs/router';
 import AssetTable from '~/components/assets/AssetTable';
 import AssetFilters from '~/components/assets/AssetFilters';
-import { filteredAssets, dashboardStats } from '~/lib/stores';
+import { filteredAssets, datahubStats } from '~/lib/stores';
 
 const AssetsPage: Component = () => {
-  const stats = dashboardStats;
+  const stats = datahubStats;
 
   return (
     <div class="flex flex-col h-full w-full bg-base-100">

@@ -1,6 +1,6 @@
 import { createSignal, createMemo } from 'solid-js';
 import type { Asset, AssetFilters, AssetStatus, AssetType } from '~/types';
-import { assets as dummyAssets, getDashboardStats } from '~/data/dummy-data';
+import { assets as dummyAssets, getDatahubStats } from '~/data/dummy-data';
 
 // Auth store: session is managed server-side via cookies; client only reflects state from API
 export const [authUser, setAuthUser] = createSignal<{ email: string } | null>(null);
@@ -104,8 +104,8 @@ export const filteredAssets = createMemo(() => {
   return result;
 });
 
-// Dashboard stats (reactive)
-export const dashboardStats = createMemo(() => getDashboardStats());
+// Datahub stats (reactive)
+export const datahubStats = createMemo(() => getDatahubStats());
 
 // Selected asset for map focus
 export const [selectedAssetId, setSelectedAssetId] = createSignal<string | null>(null);

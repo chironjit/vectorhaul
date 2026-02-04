@@ -3,7 +3,7 @@ import { A } from '@solidjs/router';
 import MapView from '~/components/map/MapView';
 import SpeedChart from '~/components/charts/SpeedChart';
 import StatsPanel from '~/components/stats/StatsPanel';
-import { assets, dashboardStats } from '~/lib/stores';
+import { assets, datahubStats } from '~/lib/stores';
 import { assetEvents, generateSpeedData, geofences } from '~/data/dummy-data';
 import type { Asset, Event } from '~/types';
 
@@ -51,7 +51,7 @@ const widgetSizes: Record<string, 'large' | 'small'> = {
 };
 
 const Overview: Component = () => {
-  const stats = dashboardStats;
+  const stats = datahubStats;
   const defaultOrder = ['stats', 'map', 'speed', 'action', 'routes', 'snapshot', 'events', 'links'];
   const defaultExpanded = ['stats'];
   const [widgetOrder, setWidgetOrder] = createSignal<string[]>(defaultOrder);
@@ -629,7 +629,7 @@ const Overview: Component = () => {
       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div>
           <div class="text-sm text-base-content/60 uppercase tracking-wide">Operations Overview</div>
-          <h1 class="text-2xl font-semibold mt-1">Fleet Command Dashboard</h1>
+          <h1 class="text-2xl font-semibold mt-1">Fleet Command Datahub</h1>
           <p class="text-sm text-base-content/60 mt-1">
             Live operational status, exceptions, and performance signals.
           </p>

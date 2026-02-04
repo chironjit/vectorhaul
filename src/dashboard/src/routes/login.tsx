@@ -48,7 +48,7 @@ const Login: Component = () => {
               </div>
               <div>
                 <h1 class="card-title text-2xl">Logistics Tracker</h1>
-                <p class="text-sm text-base-content/60">Sign in to the dashboard</p>
+                <p class="text-sm text-base-content/60">Sign in to the datahub</p>
               </div>
             </div>
 

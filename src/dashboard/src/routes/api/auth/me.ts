@@ -1,14 +1,14 @@
 import type { APIEvent } from "@solidjs/start/server";
 import { getSession } from "vinxi/http";
 
-const SESSION_NAME = "dashboard-auth";
+const SESSION_NAME = "datahub-auth";
 
 function getSessionSecret(): string | null {
   const secret = process.env.SESSION_SECRET;
   if (secret && secret.length >= 32) return secret;
   const isDev =
     process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined;
-  if (isDev) return "logistics-dashboard-dev-session-secret-min-32-chars";
+  if (isDev) return "logistics-datahub-dev-session-secret-min-32-chars";
   return null;
 }
 

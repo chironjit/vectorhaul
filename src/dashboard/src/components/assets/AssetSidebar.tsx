@@ -6,7 +6,7 @@ import {
   sidebarOpen, 
   toggleSidebar, 
   filteredAssets,
-  dashboardStats,
+  datahubStats,
 } from '~/lib/stores';
 
 interface AssetSidebarProps {
@@ -15,7 +15,7 @@ interface AssetSidebarProps {
 
 const AssetSidebar: Component<AssetSidebarProps> = (props) => {
   const assets = filteredAssets;
-  const stats = dashboardStats;
+  const stats = datahubStats;
 
   return (
     <>
