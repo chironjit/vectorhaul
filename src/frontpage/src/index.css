@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--bc) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(var(--bc) / 0.5);
+}
+
+/* Anchor offset for fixed navbar */
+html {
+  scroll-padding-top: 5rem;
+}
+
+/* Selection color */
+::selection {
+  background: oklch(var(--p) / 0.3);
+}
