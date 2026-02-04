@@ -52,9 +52,10 @@ const widgetSizes: Record<string, 'large' | 'small'> = {
 
 const Overview: Component = () => {
   const stats = dashboardStats;
-  const defaultOrder = ['stats', 'speed', 'action', 'routes', 'map', 'snapshot', 'events', 'links'];
+  const defaultOrder = ['stats', 'map', 'speed', 'action', 'routes', 'snapshot', 'events', 'links'];
+  const defaultExpanded = ['stats'];
   const [widgetOrder, setWidgetOrder] = createSignal<string[]>(defaultOrder);
-  const [expandedWidgets, setExpandedWidgets] = createSignal<string[]>([]);
+  const [expandedWidgets, setExpandedWidgets] = createSignal<string[]>(defaultExpanded);
   const [draggingId, setDraggingId] = createSignal<string | null>(null);
   const [dropTargetId, setDropTargetId] = createSignal<string | null>(null);
   const [dropPosition, setDropPosition] = createSignal<'before' | 'after' | null>(null);
