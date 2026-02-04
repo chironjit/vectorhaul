@@ -52,7 +52,7 @@ const widgetSizes: Record<string, 'large' | 'small'> = {
 
 const Overview: Component = () => {
   const stats = datahubStats;
-  const defaultOrder = ['stats', 'map', 'speed', 'action', 'routes', 'snapshot', 'events', 'links'];
+  const defaultOrder = ['stats', 'action', 'map', 'speed', 'routes', 'snapshot', 'events', 'links'];
   const defaultExpanded = ['stats'];
   const [widgetOrder, setWidgetOrder] = createSignal<string[]>(defaultOrder);
   const [expandedWidgets, setExpandedWidgets] = createSignal<string[]>(defaultExpanded);
